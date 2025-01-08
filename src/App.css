@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 .App {
   text-align: center;
 }
@@ -27,6 +32,12 @@
 .App-link {
   color: #61dafb;
 }
+
+.App-footer p {
+  font-size: 12px;
+  margin: 10px 20px;
+}
+
 
 @keyframes App-logo-spin {
   from {

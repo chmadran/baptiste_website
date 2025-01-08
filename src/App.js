@@ -4,18 +4,25 @@ import Home from './Components/Home';
 import About from './Components/About';
 import Contact from './Components/Contact';
 
-
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header" id="home">
         <Navbar />
-        <Home/>
+        <Home />
       </header>
       <main>
-        <About />
-        <Contact />
+        <section id="about">
+          <About />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
       </main>
+      <footer className="App-footer">
+        <p>Mentions légales et politique de confidentialité</p>
+        <p>© 2024 par Grimaud Avocat</p>
+      </footer>
     </div>
   );
 }

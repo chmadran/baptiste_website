@@ -1,6 +1,9 @@
 Background #dfd5cb
 Design #ff5e48
 
+* Changer les couleurs 
+* Changer la font pour poppins 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
