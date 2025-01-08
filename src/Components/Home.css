@@ -14,6 +14,8 @@
     position: relative; /* Allows positioning of overlay */
 }
 
+
+
 /* Make the image fill the entire container */
 .column img {
     width: 100%;
@@ -26,7 +28,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 40%;
     height: 100vh; 
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
     display: flex;
@@ -34,22 +36,14 @@
     justify-content: center; /* Vertically center the content */
     align-items: center; /* Horizontally center the content */
     color: white; /* White text for contrast */
-    text-align: center; /* Center the text */
-    padding: 20px; /* Add some padding for space around text */
+    text-align: justify; /* Center the text */
 
 }
 
-/* Main text style */
-.main-text {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-
-/* Secondary text style */
 .sub-text {
     font-size: 16px;
     padding: 10px;
+    font-weight: 300;
 }
 
 .text-content {

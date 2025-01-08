@@ -1,8 +1,12 @@
 Background #dfd5cb
 Design #ff5e48
 
-* Changer les couleurs 
-* Changer la font pour poppins 
+Font : Raleway 
+300: Light
+400: Regular (Normal)
+500: Medium
+600: Semi-Bold
+700: Bold
 
 # Getting Started with Create React App
 

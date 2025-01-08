@@ -1,47 +1,77 @@
-/* Navbar Styles */
 .navbar {
-    position: fixed; /* Stick the navbar to the top of the page */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
-    height: 105px;
-    background-color: linen; /* White background */
-    display: flex; /* Flexbox for layout */
-    align-items: center; /* Vertically center items */
-    z-index: 1000; /* Ensure the navbar stays above other elements */
+    height: 95px;
+    background-color: linen; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; /* Ensures proper spacing between logo and links */
+    z-index: 1000; 
 }
 
-/* Logo - Align to the left of the navbar */
 .navbar-logo {
-    margin-left: 80px; /* Add margin to the right of the logo */
+    flex: 0 0 40%; 
     display: flex;
-    justify-content: flex-start; /* Align logo to the left */
+    justify-content: flex-end; /* Aligns logo to the right of its section */
 }
 
-/* Logo image */
 .navbar-logo img {
-    width: 105px;
-    height: 105px;
+    width: 95px;
+    height: 95px;
     object-fit: cover;
 }
 
-.navbar-links ul {
-    list-style-type: none; /* Remove bullet points from list */
-    margin: 0; 
-    padding: 20; /* Remove padding */
+.navbar-logo button {
+    height: 30px; /* Set a specific height for the button */
+    border: 2px solid transparent;  /* Makes the border invisible */
+    padding: 10px 10px; 
+    background-color: #dfd5cb; 
+    color: dfd5cb; 
+    font-size: 14px; 
+    font-weight: 300;
+    display: flex;
+    margin-top: 30px;
+    margin-right: 60px;
+    align-items: center; 
+    justify-content: center; 
+    letter-spacing: 1px; /* Adds space between letters */
 }
 
+.navbar-logo button p span {
+    font-weight: bold;
+}
+
+.navbar-logo button:hover {
+    background-color: #ff5e48; /* Changes background to orange */
+    color: white; /* Changes text color to white */
+}
+
+.navbar-links {
+    flex: 1; /* Takes up the remaining space */
+    display: flex;
+    justify-content: flex-start; /* Aligns links to the left of their section */
+    align-items: center;
+    margin-left: 40px;
+}
+
+.navbar-links ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    gap: 20px; 
+}
 
 .navbar-links li {
-    display: inline; /* Display list items horizontally */
-    float: left;
-    margin-left: 20px; /* Add margin between list items */
+    margin: 0; 
 }
 
 .navbar-links li a {
     padding: 8px;
     font-size: 15px;
-    text-decoration: none; /* Remove underline from links */
-    color: black; /* Set link text color */
-    cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+    text-decoration: none; 
+    color: black; 
+    font-weight: 300;
 }

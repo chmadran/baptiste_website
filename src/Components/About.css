@@ -1,18 +1,18 @@
 .about {
-    display: flex;
+    display: flex; /* Ensure the container is a flex container */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Takes up the remaining height after the navbar */
     padding: 20px;
     background-color: linen;
     text-align: center;
   }
   
 .about h1 {
-    font-size: 2.5rem;
+    font-size: 30px;
     margin-bottom: 20px;
-    font-weight: normal; 
+    font-weight: 400; 
   }
 
 .about img {
@@ -23,7 +23,9 @@
 }
 
 .about p {
-    max-width: 40%;
+    font-weight: 400;
+    width: 514px;
+    max-width: 50%;
     font-size: 15px;
     padding: 10px;
     text-align: justify; 

@@ -18,15 +18,15 @@
 
 .contact_right {
     width: 65%;
-    background-color: #f0f0f0; /* Change this to your desired color */
+    background-color: #f0f0f0; 
     padding: 20px;
     text-align : left;
 }
 
 .map iframe {
-    width: 80%; /* Makes the map responsive */
-    height: 250px; /* Sets the height of the map */
-    border: 0; /* Removes the default border */
+    width: 80%;
+    height: 250px; 
+    border: 0; 
 }
 
 .contact_content {
@@ -36,16 +36,14 @@
 .contact_content h2 {
     font-size: 20px;
     font-weight: normal;
-    margin-bottom: 5px; /* Add space below each header */
+    margin-bottom: 5px; 
 }
 
 .contact_content p {
     font-size: 13px;
-    font-weight: normal;
-    margin-bottom: 15px; /* Adds space below each paragraph */
+    margin-bottom: 15px; 
 }
 
-/* Adding padding between sections of content */
 .contact_content h2 + p {
-    margin-top: 10px; /* Adds padding between the label and its content */
+    margin-top: 10px;
 }
