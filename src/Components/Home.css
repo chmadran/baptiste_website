@@ -1,7 +1,9 @@
 /* Ensure the html and body take up the full height of the viewport */
-html, body {
-    height: 100%;
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Column container takes full height and width */
@@ -25,7 +27,7 @@ html, body {
     top: 0;
     left: 0;
     width: 50%;
-    height: 100%; 
+    height: 100vh; 
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
     display: flex;
     flex-direction: column;
@@ -47,11 +49,11 @@ html, body {
 /* Secondary text style */
 .sub-text {
     font-size: 16px;
+    padding: 10px;
 }
 
-
-/* Text container style */
 .text-content {
+    max-width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;

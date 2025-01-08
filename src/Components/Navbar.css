@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     height: 105px;
-    background-color: white; /* White background */
+    background-color: linen; /* White background */
     display: flex; /* Flexbox for layout */
     align-items: center; /* Vertically center items */
     z-index: 1000; /* Ensure the navbar stays above other elements */

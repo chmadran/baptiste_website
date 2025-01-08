@@ -1,0 +1,30 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: linen;
+    text-align: center;
+  }
+  
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: normal; 
+  }
+
+.about img {
+    width: 514px;
+    height: 235px;
+    max-width: 50%;
+    object-fit: cover;
+}
+
+.about p {
+    max-width: 40%;
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify; 
+}
