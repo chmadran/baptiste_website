@@ -1,0 +1,79 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.domaines-container {
+    padding-top: 220px;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #1F2839;
+}
+
+.title-section {
+    margin-top: 200px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.title-section h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+    color: #B69D74;
+}
+
+.title-underline {
+    width: 33%; 
+    max-width: 200px;
+    height: 2px;
+    background-color: #B69D74;
+    margin-top: 20px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.section.reverse {
+    flex-direction: row-reverse; /* For alternating the layout */
+}
+
+.section-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    width: 80%;
+}
+
+.text {
+    color: #B69D74;
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.text h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.line {
+    width: 50%;
+    height: 2px;
+    background-color: #B69D74;
+    margin: 20px 0;
+}
+
+.image {
+    flex-shrink: 0;
+    width: 300px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

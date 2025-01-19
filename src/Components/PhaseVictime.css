@@ -1,0 +1,30 @@
+.victime-container {
+    padding-top: 220px;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #1F2839;
+}
+
+.title-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    margin-top:100px;
+    margin-bottom: 40px;
+
+}
+
+.title-section h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+    color: #B69D74;
+}
+
+.title-underline {
+    width: 33%; 
+    max-width: 200px;
+    height: 2px;
+    background-color: #B69D74;
+    margin-top: 20px;
+}

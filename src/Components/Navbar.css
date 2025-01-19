@@ -25,7 +25,6 @@
     right: 40px;
 }
 
-
 .navbar-logo {
     position: absolute;
     left: 140px;
@@ -63,10 +62,53 @@
     gap: 90px;
 }
 
+.navbar-links li {
+    position: relative;
+}
+
 .navbar-links li a {
     padding: 8px;
     font-size: 20px;
     text-decoration: none;
     color: black;
     font-weight: 300;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position the dropdown below the parent */
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    z-index: 999;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    color: #B69D74; /* Highlight color */
+}
+
+/* Show the dropdown menu when 'show' class is added */
+.dropdown-menu.show {
+    display: block; /* Make the dropdown visible */
 }
