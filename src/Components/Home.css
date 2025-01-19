@@ -1,55 +1,60 @@
-/* Ensure the html and body take up the full height of the viewport */
+/* Home.css */
+.home-container {
+    padding-top: 220px;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #1F2839;
+}
 
-* {
+.profile-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.title-section {
+    margin-top:200px;
+    margin-bottom: 40px;
+}
+
+.title-section h1 {
+    font-size: 2.5rem;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    color: #B69D74;
 }
 
-/* Column container takes full height and width */
-.column {
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    margin: 0;
-    position: relative; /* Allows positioning of overlay */
+.title-underline {
+    width: 33%; 
+    max-width: 200px;
+    height: 2px;
+    background-color: #B69D74;
+    margin-top: 20px;
 }
 
-
-
-/* Make the image fill the entire container */
-.column img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* This ensures the image covers the container while maintaining aspect ratio */
-}
-
-/* Overlay box with semi-transparent background */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40%;
-    height: 100vh; 
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+.content-section {
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Vertically center the content */
-    align-items: center; /* Horizontally center the content */
-    color: white; /* White text for contrast */
-    text-align: justify; /* Center the text */
-
+    gap: 40px;
+    align-items: flex-start;
 }
 
-.sub-text {
-    font-size: 16px;
-    padding: 10px;
-    font-weight: 300;
+.profile-picture {
+    flex-shrink: 0;
+    width: 300px; 
 }
 
-.text-content {
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.profile-picture img {
+    width: auto;
+    height:350px;
+}
+
+.description {
+    color: #B69D74;
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.description p {
+    margin-bottom: 50px; /* Adjust this value to control space between paragraphs */
 }
