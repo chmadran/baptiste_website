@@ -7,20 +7,24 @@ const Navbar = () => {
   const [isDomainesDropdownVisible, setDomainesDropdownVisible] = useState(false);
 
   const handleMouseEnter = () => {
+    console.log('PHASES Dropdown Visible: true');
     setDropdownVisible(true);
   };
-
+  
   const handleMouseLeave = () => {
+    console.log('PHASES Dropdown Visible: false');
     setDropdownVisible(false);
   };
-
+  
   const handleDomainesMouseEnter = () => {
+    console.log("DOMAINES Dropdown Visible: true");
     setDomainesDropdownVisible(true);
   };
-
+  
   const handleDomainesMouseLeave = () => {
+    console.log("DOMAINES Dropdown Visible: false");
     setDomainesDropdownVisible(false);
-  };
+  };  
 
   return (
     <nav className="navbar">
