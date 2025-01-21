@@ -3,7 +3,7 @@ html {
   }
   
   .domaines-container {
-    padding-top: 220px; /* Adjust padding to account for navbar */
+    padding-top: 170px; /* Adjust padding to account for navbar */
     width: 100%;
     background-color: #1F2839;
   }

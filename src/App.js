@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
 import Home from './Components/Home';
 import Honoraires from './Components/Honoraires';
 import Domaines from './Components/Domaines';
@@ -21,6 +22,7 @@ function App() {
             <Route path="/domaines-intervention" element={<Domaines />} />
           </Routes>
         </main>
+        <Footer />
       </Router>
     </div>
   );

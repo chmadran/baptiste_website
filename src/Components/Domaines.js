@@ -47,6 +47,32 @@ const Domaines = () => {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </div>
+
+      {/* Section 3 */}
+      <div id="amenagement-peine" className="section">
+      <div className="image-container">
+        <img src="/assets/palais.png" alt="Aménagement de Peine" />
+        <div className="overlay">
+          <h2>Aménagement de Peine</h2>
+        </div>
+      </div>
+      <div className="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+
+      {/* Section 4 */}
+      <div id="droit-victimes" className="section reverse">
+      <div className="image-container">
+        <img src="/assets/bibliotheque.png" alt="Droit des Victimes" />
+        <div className="overlay">
+          <h2>Droit des Victimes</h2>
+        </div>
+      </div>
+      <div className="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
   
   </div>
   
