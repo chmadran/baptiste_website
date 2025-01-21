@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';  // Import Link for routing
 import './Navbar.css';
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -25,6 +26,21 @@ const Navbar = () => {
     console.log("DOMAINES Dropdown Visible: false");
     setDomainesDropdownVisible(false);
   };  
+
+  const location = useLocation();
+  
+  const handleContactClick = (e) => {
+    e.preventDefault();
+    if (location.pathname === '/') {
+      // If we're on the home page, smooth scroll to the contact section
+      document.getElementById('contact-section').scrollIntoView({ 
+        behavior: 'smooth' 
+      });
+    } else {
+      // If we're on another page, navigate to home page and then scroll to contact
+      window.location.href = '/#contact-section';
+    }
+  };
 
   return (
     <nav className="navbar">
@@ -70,7 +86,11 @@ const Navbar = () => {
             </ul>
           </li>
           <li><a href="honoraires">HONORAIRES</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li>
+            <a href="#contact-section" onClick={handleContactClick}>
+              CONTACT
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
