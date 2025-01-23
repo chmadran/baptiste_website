@@ -1,49 +1,23 @@
 .victime-container {
-    padding-top: 200px;
+    padding-top: 250px;
     min-height: 100vh;
     width: 100%;
-    background-color: #1F2839;
-}
-
-.victime-title-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.victime-title-section h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    padding: 0;
-    color: #B69D74;
-
-}
-
-.victime-title-underline {
-    width: 33%; 
-    max-width: 200px;
-    height: 2px;
-    background-color: #B69D74;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.victime-text-section h2 {
+    background-color: white;
+  }
+  
+  .victime-title-section h2 {
     text-align: center;
-    color: #B69D74;
+    color: #555;
     margin-bottom: 40px;
     align-items: center;
-}
-
-.victime-text-section p {
-    text-align: left;
-    color: white;
+  }
+  
+  .victime-text-section p {
+    text-align: justify; /* Justify text for a cleaner look */
+    color: black;
     margin-bottom: 40px;
     margin-left: 40px;
-}
+    font-size: 1rem; /* Same font size as in the other CSS */
+    line-height: 1.6; /* Same line height for consistent readability */
+  }
+  
