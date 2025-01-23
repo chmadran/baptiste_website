@@ -15,12 +15,15 @@ const Home = () => {
             <img src="./assets/pp.png" alt="Baptiste Grimaud" />
           </div>
           <div className="profile-content-description">
-            <p>
-              ​"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-            </p>
-            <p>
-              ​"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+          <p>Maître Baptiste Grimaud, avocat au Barreau de Paris, intervient en matière pénale, <strong>dans la défense des prévenus ou des accusés ainsi que dans l'assistance des victimes d'infraction</strong>.</p>
+
+          <p>Diplômé d'un Master 2 de Droit privé général et européen, Maître Baptiste Grimaud a renforcé ses compétences auprès d'avocats pénalistes parisiens de renom, lui permettant de développer un <strong>savoir-faire dans la gestion de l'urgence pénale</strong> (garde à vue, comparution immédiate,…) <strong>et dans l'étude des affaires pénales les plus complexes</strong> (trafic de stupéfiants en bande organisée, association de malfaiteurs, corruption,…).</p>
+
+          <p>Maître Baptiste Grimaud s'engage pleinement à défendre les intérêts de ses clients, en leur offrant un <strong>accompagnement personnalisé</strong> et en déployant des <strong>stratégies de défense adaptées</strong> tout au long de la procédure.</p>
+
+          <p>Le Cabinet intervient dans <strong>toutes les affaires pénales</strong> et intervient également au stade de l'<strong>aménagement de peine</strong> dans la défense des droits des détenus.</p>
+
+          <p>Maître Baptiste Grimaud assure une <strong>disponibilité 24h/24</strong> et vous assiste <strong>devant l'ensemble des juridictions pénales de France</strong> à tous les stades de la procédure.</p>
           </div>
         </div>
       </div>
