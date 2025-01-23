@@ -1,30 +1,49 @@
 .victime-container {
-    padding-top: 220px;
+    padding-top: 200px;
     min-height: 100vh;
     width: 100%;
     background-color: #1F2839;
 }
 
-.title-section {
+.victime-title-section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px;
-    margin-top:100px;
+    margin-top: 50px;
     margin-bottom: 40px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.title-section h1 {
+.victime-title-section h1 {
     font-size: 2.5rem;
     margin: 0;
     padding: 0;
     color: #B69D74;
+
 }
 
-.title-underline {
+.victime-title-underline {
     width: 33%; 
     max-width: 200px;
     height: 2px;
     background-color: #B69D74;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.victime-text-section h2 {
+    text-align: center;
+    color: #B69D74;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.victime-text-section p {
+    text-align: left;
+    color: white;
+    margin-bottom: 40px;
+    margin-left: 40px;
 }
