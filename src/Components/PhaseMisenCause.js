@@ -3,10 +3,19 @@ import './PhaseMisenCause.css';
 const PhaseMisenCause = () => {
   return (
     <div className="mis-en-cause-container">
+      <div className="mis-en-cause-hero">
+        <img
+          src="/assets/police.png"
+          alt="Police"
+          className="hero-image"
+        />
+        <div className="hero-title">
+          <h2>L’un de vos proches a été placé en garde à vue ? Vous êtes convoqué à une audience correctionnelle ? Vous êtes accusé d’un crime ?</h2>
+          <h2>Maître Baptiste Grimaud vous défendra rapidement et efficacement pour faire valoir vos droits.</h2>
+        </div>
+      </div>
       <div className="content">
-      <h2 className="highlighted-title">L’un de vos proches a été placé en garde à vue ? Vous êtes convoqué à une audience correctionnelle ? Vous êtes accusé d’un crime ?</h2>
-        <h2 className="highlighted-title">Maître Baptiste Grimaud vous défendra rapidement et efficacement pour faire valoir vos droits.</h2>
-        <section>
+      <section>
           <h3>Garde à vue :</h3>
           <p>
             La garde à vue est une mesure de privation de liberté, prise par un officier de police judiciaire sous le contrôle de l’autorité judiciaire.
@@ -93,5 +102,6 @@ const PhaseMisenCause = () => {
     </div>
   );
 };
+
 
 export default PhaseMisenCause;

@@ -1,44 +1,40 @@
 .mis-en-cause-container {
-    padding-top: 250px;
-    text-align: justify; /* Justify the content */
+    min-height: 100vh; /* Ensures the container takes up the full viewport height */
+    padding-top: 200px;
+    background-color: #f9f9f9;
   }
   
+  .mis-en-cause-hero {
+    display: flex; /* Flex layout to align image and title side by side */
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; /* Full viewport height */
+    padding: 0 50px;
+    background-color: white; /* Background color for the hero section */
+  }
+  
+  .hero-image {
+    width: 50%; /* Image occupies half of the screen */
+    height: 500px;
+    object-fit: cover; /* Ensures the image is well-fitted */
+  }
+  
+  .hero-title {
+    width: 45%; /* Title occupies the remaining space */
+    text-align: center;
+  }
+  
+  .hero-title h2 {
+    font-size: 1.8rem; /* Larger font size for emphasis */
+    margin-bottom: 20px;
+    color: #333;
+  }
   
   .content {
-    margin-left: 50px;
+    margin: 50px auto;
     font-size: 1rem;
     line-height: 1.6;
     color: #555;
-
-  }
-  
-  .highlighted-title {
-    font-size: 1.2rem;
-    text-align: center;
-    font-weight: bold;
-    margin: 20px 0;
-  }
-  
-  section {
-    margin-top: 20px;
-  }
-  
-  section h3 {
-    color: black;
-    font-size: 1.4rem;
-  }
-  
-  section p {
-    margin-bottom: 15px;
-  }
-  
-  section ul {
-    list-style: disc;
-    margin-left: 20px;
-    margin-bottom: 15px;
-  }
-  
-  section ul li {
-    margin-bottom: 10px;
+    max-width: 1200px;
   }
   
