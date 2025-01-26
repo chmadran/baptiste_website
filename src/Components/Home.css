@@ -20,7 +20,7 @@
 #profile-section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 40px 60px 40px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -28,6 +28,7 @@
 
 .profile-title {
     width: 100%;
+    margin-top: 200px;
     margin-bottom: 60px;
 }
 
@@ -50,30 +51,32 @@
     display: flex;
     gap: 40px;
     width: 100%;
-    align-items: stretch;
+    align-items: flex-start; /* Changed from stretch */
     color: #B69D74;
 }
 
 .profile-content-picture {
     flex-shrink: 0;
-    width: 300px; 
+    width: 400px; 
     align-items: center;
 }
 
 .profile-content-picture img {
-    width: auto;
-    height: 520px;
+    width: 450px;
+    height: auto;
+    
 }
 
 .profile-content-description {
-    flex: 0 1 70%; /* Reduces width to 70% of container */
+    flex: 0 1 60%;
     font-size: 1.1rem;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertically centers text */
+    justify-content: flex-start; /* Changed from center */
     text-align: justify;
-    padding-left: 40px;
+    padding-left: 100px;
+    padding-top: 0; /* Added to ensure no top padding */
 }
 
 .profile-content-description p {
