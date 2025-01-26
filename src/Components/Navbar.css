@@ -73,15 +73,21 @@ html {
     margin: 0;
     font-size: 30px;
     font-weight: 400;
-    color: black;
+    color: white;
 }
 
 .navbar-links {
+    background-color: #1F2839;
+    border-top: 2px solid #B69D74; 
+    border-bottom: 2px solid #B69D74; 
+    margin-top: 0; /* Remove top margin */
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0; /* Position at bottom of navbar */
 }
-
 .navbar-links ul {
     list-style-type: none;
     margin: 0;
@@ -95,10 +101,10 @@ html {
 }
 
 .navbar-links li a {
+    color: white;
     padding: 8px;
     font-size: 20px;
     text-decoration: none;
-    color: black;
     font-weight: 300;
 }
 

@@ -11,19 +11,15 @@ const Contact = () => {
         </div>
         <div className="contact-right">
             <div className="contact-content">
-                <h2> EMAIL </h2>
                 <p>bgrimaud@grimaudavocat.com</p>
-
-                <h2> TELEPHONE </h2>
                 <p>+33 6 34 17 61 65</p>
-
-                <h2> ADRESSE </h2>
-                <p>11 boulevard Sébastopol, 75001 Paris </p>
+                <p>baptiste.grimaud</p>
         </div>
             <div className="map">
+                <p>11 boulevard Sébastopol, 75001 Paris </p>
                 <iframe 
                     title="map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5560.2950149701965!2d1.2536865756405917!3d45.828329009070664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f934afa722ed29%3A0xaa17df25ccad86b6!2s47%20Bd%20Gambetta%2C%2087000%20Limoges!5e0!3m2!1sfr!2sfr!4v1736327394665!5m2!1sfr!2sfr" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.958030406859!2d2.3456875758292988!3d48.859010700663674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1ef0aae6b5%3A0x2e7e26aca40f866f!2s11%20Bd%20de%20S%C3%A9bastopol%2C%2075001%20Paris!5e0!3m2!1sfr!2sfr!4v1737924109345!5m2!1sfr!2sfr"                    
                     allowfullscreen="" 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade">
