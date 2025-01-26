@@ -6,6 +6,22 @@
   "icons": [
     {
       "src": "favicon.ico",
+      "sizes": "16x16 32x32 48x48 64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon-32.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon-48.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "favicon-64.ico",
+      "sizes": "64x64",
       "type": "image/x-icon"
     }
   ],
