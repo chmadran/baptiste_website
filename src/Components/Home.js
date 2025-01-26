@@ -36,18 +36,18 @@ const Home = () => {
       </div>
 
       <div id="middle-section" className="section">
-        <Link to="/mis-en-cause">
-          <img src="./assets/rectangle0.png" alt="garde-a-vue" />
-        </Link>
-        <Link to="/mis-en-cause">
-          <img src="./assets/rectangle1.png" alt="comparution-immediate" />
-        </Link>
-        <Link to="/mis-en-cause">
-          <img src="./assets/rectangle2.png" alt="détention" />
-        </Link>
-        <Link to="/victime">
-          <img src="./assets/rectangle3.png" alt="victime" />
-        </Link>
+          <Link to="/mis-en-cause" className="circle-link">
+              Garde à vue
+          </Link>
+          <Link to="/mis-en-cause" className="circle-link">
+              Comparution immédiate
+          </Link>
+          <Link to="/mis-en-cause" className="circle-link">
+              Détention provisoire
+          </Link>
+          <Link to="/victime" className="circle-link">
+              Victime
+          </Link>
       </div>
 
       <div id="contact-section" className="section">

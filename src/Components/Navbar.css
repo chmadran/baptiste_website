@@ -45,6 +45,7 @@ html {
 .navbar-button button p {
     margin: 5px 0;
     font-size: 16px;
+    font-family: Montserrat;
 }
 
 .navbar-button button p:first-child {

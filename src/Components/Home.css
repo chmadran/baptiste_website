@@ -1,5 +1,4 @@
 .home-container {
-    padding-top: 250px;
     min-height: 100vh;
     width: 100%;
     background-color: #1F2839;
@@ -9,15 +8,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
     position: relative;
 }
 
-#middle-section {
-    background-color: white;    
-}
-
 #profile-section {
+    overflow: visible; /* Add this */
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px 60px 40px;
@@ -62,7 +57,7 @@
 }
 
 .profile-content-picture img {
-    width: 450px;
+    width: 500px;
     height: auto;
     
 }
@@ -81,4 +76,30 @@
 
 .profile-content-description p {
     margin-bottom: 25px;
+}
+
+#middle-section {
+    margin-top: 100px;
+    background-color: #1F2839 ;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+
+}
+
+.circle-link {
+    width: 290px;
+    height: 290px;
+    background-color: #B69D74;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    margin: 0 20px;
+    font-weight: bold;
+
 }
