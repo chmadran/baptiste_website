@@ -32,12 +32,12 @@ const Navbar = () => {
   const handleContactClick = (e) => {
     e.preventDefault();
     if (location.pathname === '/') {
-      // If we're on the home page, smooth scroll to the contact section
       document.getElementById('contact-section').scrollIntoView({ 
         behavior: 'smooth' 
       });
     } else {
-      // If we're on another page, navigate to home page and then scroll to contact
+      // Store that we want to scroll to contact section
+      sessionStorage.setItem('scrollToContact', 'true');
       window.location.href = '/#contact-section';
     }
   };

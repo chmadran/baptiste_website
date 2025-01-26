@@ -1,8 +1,15 @@
 import './Home.css';
 import Contact from './Contact';
 import { Link } from 'react-router-dom'; // Import Link for navigation
+import { useEffect } from 'react';
 
 const Home = () => {
+  useEffect(() => {
+    if (sessionStorage.getItem('scrollToContact')) {
+      document.getElementById('contact-section').scrollIntoView();
+      sessionStorage.removeItem('scrollToContact');
+    }
+  }, []);
   return (
     <div className="home-container">
       <div id="profile-section" className="section">
