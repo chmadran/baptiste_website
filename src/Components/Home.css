@@ -44,7 +44,7 @@
     max-width: 200px;
     height: 2px;
     margin-top: 20px;
-    background-color: black !important; /* Added !important for specificity */
+    background-color: black 
 }
 
 .profile-content {
