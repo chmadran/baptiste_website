@@ -2,28 +2,13 @@
   "manifest_version": 0,
   "name": "Baptiste Grimaud Avocat",
   "version": 1.0,
-  "description": "A website for Baptiste Grimaud's criminal law firm.",
+  "description": "Baptiste Grimaud avocat pénaliste.",
   "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "16x16 32x32 48x48 64x64",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "favicon-32.ico",
-      "sizes": "32x32",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "favicon-48.ico",
-      "sizes": "48x48",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "favicon-64.ico",
-      "sizes": "64x64",
-      "type": "image/x-icon"
-    }
+      {
+        "src": "assets/logo.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      }
   ],
   "author": "Charlotte Madrangeas",
   "start_url": "."

@@ -77,7 +77,7 @@ html {
 }
 
 .navbar-links {
-    background-color: #1F2839;
+    background-color: white;
     border-top: 2px solid #B69D74; 
     border-bottom: 2px solid #B69D74; 
     margin-top: 0; /* Remove top margin */
@@ -101,7 +101,7 @@ html {
 }
 
 .navbar-links li a {
-    color: white;
+    color: #1F2839;
     padding: 8px;
     font-size: 20px;
     text-decoration: none;
