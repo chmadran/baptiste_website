@@ -1,6 +1,7 @@
 .mis-en-cause-container {
     min-height: 100vh; /* Ensures the container takes up the full viewport height */
     padding-top: 170px;
+    background-color: #1F2839 ;
   }
   
   .mis-en-cause-hero {
@@ -13,10 +14,10 @@
   }
   
   .hero-image {
-    width: auto; /* Image occupies half of the screen */
-    height: 500px;
-    padding-left: 200px;
-    object-position: center 10%; /* Adjust this percentage to move image up/down */
+    width: 50%; /* Image occupies half of the screen */
+    height: 600px;
+    object-fit: cover; /* Ensures the image is well-fitted */
+    object-position: center 15%; /* Adjust this percentage to move image up/down */
 
   }
   
@@ -33,6 +34,7 @@
   .content {
     margin: 50px auto;
     font-size: 1rem;
+    color : #B69D74;
     line-height: 1.6;
     max-width: 1200px;
     text-align: justify; /* Makes text alignment consistent */

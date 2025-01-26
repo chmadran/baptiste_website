@@ -14,7 +14,7 @@ const Home = () => {
     <div className="home-container">
       <div id="profile-section" className="section">
         <div className="profile-title">
-          <h1>Baptiste Grimaud</h1>
+          <h1>Maître Baptiste Grimaud</h1>
           <div className="profile-title-underline"></div>
         </div>
         <div className="profile-content">
