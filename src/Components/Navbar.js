@@ -63,7 +63,7 @@ const Navbar = () => {
             onMouseEnter={handleDomainesMouseEnter}
             onMouseLeave={handleDomainesMouseLeave}
           >
-            <a href="#domaines">DOMAINES D'INTERVENTION</a>
+            <Link to="/domaines-intervention">DOMAINES D'INTERVENTION</Link>
             <ul className={`dropdown-menu ${isDomainesDropdownVisible ? 'show' : ''}`}>
               <li><Link to="/domaines-intervention#droit-penal-general">Droit Pénal général</Link></li>
               <li><Link to="/domaines-intervention#droit-penal-affaires">Droit Pénal des Affaires</Link></li>

@@ -7,11 +7,16 @@ const Domaines = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.hash) {
-      const section = document.getElementById(location.hash.slice(1));
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-      }
+    if (!location.hash) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    const element = document.getElementById(location.hash.slice(1));
+    if (element) {
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
     }
   }, [location]);
 
