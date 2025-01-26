@@ -8,7 +8,7 @@ const Home = () => {
       <div id="profile-section" className="section">
         <div className="profile-title">
           <h1>Baptiste Grimaud</h1>
-          <div className="title-underline"></div>
+          <div className="profile-title-underline"></div>
         </div>
         <div className="profile-content">
           <div className="profile-content-picture">

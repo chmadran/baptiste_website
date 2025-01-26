@@ -1,85 +1,63 @@
-html {
-    scroll-behavior: smooth;
-  }
-  
-  .domaines-container {
-    padding-top: 170px; 
-    width: 100%;
-    background-color: #1F2839;
-  }
-  
-  .title-section {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 40px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .title-section h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    padding: 0;
-    color: #B69D74;
-  }
-  
-  .title-underline {
-    width: 33%;
-    max-width: 200px;
-    height: 2px;
-    background-color: #B69D74;
-    margin-top: 20px;
-  }
-  
-  .section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-    position: relative;
-  }
-  
-  .section.reverse {
-    flex-direction: row-reverse;
-  }
-  
-  .image-container {
-    position: relative;
-    width: 50%;
-    height: 100%;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5);
-  }
-  
-  .overlay h2 {
-    color: #B69D74;
-    font-size: 2rem;
-    margin: 0;
-  }
-  
-  .text {
-    color: #B69D74;
-    flex: 1;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    padding: 20px;
-  }
-  
+.domaines-container {
+  padding-top: 170px;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #1F2839;
+}
+
+.domaines-title-section {
+  top: 220px;
+  margin-left: 100px;;
+  padding: 40px;
+}
+
+.domaines-title-section h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+  color: #B69D74;
+}
+
+.domaines-title-underline {
+  width: 33%;
+  max-width: 200px;
+  height: 2px;
+  background-color: #B69D74;
+  margin-top: 10px;
+}
+
+.domaines-section, .domaines-section-reverse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+.domaines-image-container {
+  width: 50%;
+  height: 500px; /* Fixed height or adjust as needed */
+}
+
+.domaines-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.domaines-text-container {
+  width: 50%;
+  padding: 0 40px;
+}
+
+.domaines-text-container h2 {
+  color: #B69D74;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.domaines-text {
+  color: #B69D74;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

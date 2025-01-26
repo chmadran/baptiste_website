@@ -10,49 +10,49 @@
     max-width: 1200px;
   }
   
-  .contact_left {
+  .contact-left {
     flex-shrink: 0;
     width: 200px;
   }
   
-  .contact_header h1 {
+  .contact-header h1 {
     font-size: 50px;
     font-weight: bold;
     margin: 0;
     padding-bottom: 0.5rem;
-    color: black;
+    color: #B69D74;
   }
   
-  .title-underline {
-    color: black;
+  .contact-title-underline {
+    color: #B69D74;
     width: 33%;
     height: 2px;
     background-color: currentColor;
     margin-top: 0.5rem;
   }
   
-  .contact_right {
+  .contact-right {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
   
-  .contact_content {
+  .contact-content {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
   
-  .contact_content h2 {
-    color: black;
+  .contact-content h2 {
+    color: #B69D74;
     font-size: 1.2rem;
     font-weight: bold;
     margin: 0;
   }
   
-  .contact_content p {
-    color: black;
+  .contact-content p {
+    color: #B69D74;
     margin: 0;
   }
   

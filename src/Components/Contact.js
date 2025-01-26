@@ -3,14 +3,14 @@ import './Contact.css';
 const Contact = () => {
   return (
     <div className="contact">
-        <div className="contact_left">
-            <div className="contact_header">
+        <div className="contact-left">
+            <div className="contact-header">
                 <h1>CONTACT</h1>
-                <div className="title-underline"></div>
+                <div className="contact-title-underline"></div>
             </div>
         </div>
-        <div className="contact_right">
-            <div className="contact_content">
+        <div className="contact-right">
+            <div className="contact-content">
                 <h2> EMAIL </h2>
                 <p>bgrimaud@grimaudavocat.com</p>
 
