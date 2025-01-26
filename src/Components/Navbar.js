@@ -50,7 +50,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-button">
           <button>
-            <p>06 01 02 03 04</p>
+            <p>06 34 17 61 65</p>
             <p>Urgence pénale 7j/7 24h/24</p>
           </button>
         </div>
@@ -65,7 +65,7 @@ const Navbar = () => {
           >
             <Link to="/domaines-intervention">DOMAINES D'INTERVENTION</Link>
             <ul className={`dropdown-menu ${isDomainesDropdownVisible ? 'show' : ''}`}>
-              <li><Link to="/domaines-intervention#droit-penal-general">Droit Pénal général</Link></li>
+              <li><Link to="/domaines-intervention#droit-penal-affaires">Droit Pénal général</Link></li>
               <li><Link to="/domaines-intervention#droit-penal-affaires">Droit Pénal des Affaires</Link></li>
               <li><Link to="/domaines-intervention#amenagement-peine">Aménagement de Peine</Link></li>
               <li><Link to="/domaines-intervention#droit-victimes">Droit des Victimes</Link></li>

@@ -15,10 +15,10 @@ const Contact = () => {
                 <p>bgrimaud@grimaudavocat.com</p>
 
                 <h2> TELEPHONE </h2>
-                <p>+33 6 01 02 03 04</p>
+                <p>+33 6 34 17 61 65</p>
 
                 <h2> ADRESSE </h2>
-                <p>47 bd Gambetta, 87000 Limoges, France </p>
+                <p>11 boulevard Sébastopol, 75001 Paris </p>
         </div>
             <div className="map">
                 <iframe 

@@ -10,12 +10,17 @@ const Domaines = () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
-
+  
     const element = document.getElementById(location.hash.slice(1));
     if (element) {
-      setTimeout(() => {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
+      const offset = 170; // Match padding-top value
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+  
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   }, [location]);
 
@@ -31,7 +36,7 @@ const Domaines = () => {
           <img src="/assets/justice.png" alt="Droit Pénal Général et Droit Pénal des Affaires" />
         </div>
         <div className="domaines-text-container">
-          <h2>Droit Pénal Général<br />et<br />Droit Pénal des Affaires</h2>
+          <h2>Droit Pénal Général et<br />Droit Pénal des Affaires</h2>
           <div className="domaines-text">
             <p>Le Cabinet dédie son activité exclusivement à la matière pénale.</p>
 
