@@ -7,7 +7,7 @@
 
 .domaines-title-section {
   top: 220px;
-  margin-left: 100px;;
+  margin-left: 100px;
   padding: 40px;
 }
 
@@ -26,7 +26,7 @@
   margin-top: 10px;
 }
 
-.domaines-section, .domaines-section-reverse {
+.domaines-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,9 +34,13 @@
   padding: 50px 0;
 }
 
+.domaines-section:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
 .domaines-image-container {
   width: 50%;
-  height: 500px; /* Fixed height or adjust as needed */
+  height: 500px;
 }
 
 .domaines-image-container img {
@@ -60,4 +64,21 @@
   color: #B69D74;
   font-size: 1.1rem;
   line-height: 1.6;
+}
+
+.domaines-text p {
+  margin-bottom: 15px;
+}
+
+.domaines-text ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.domaines-text li {
+  margin-bottom: 10px;
+}
+
+.domaines-text strong {
+  color: #B69D74;
 }

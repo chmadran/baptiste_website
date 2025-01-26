@@ -1,7 +1,6 @@
-import React from 'react';
-import './Domaines.css';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import './Domaines.css';
 
 const Domaines = () => {
   const location = useLocation();
@@ -27,7 +26,6 @@ const Domaines = () => {
         <div className="domaines-title-underline"></div>
       </div>
 
-      {/* Section 1 */}
       <div id="droit-penal-affaires" className="domaines-section">
         <div className="domaines-image-container">
           <img src="/assets/justice.png" alt="Droit Pénal Général et Droit Pénal des Affaires" />
@@ -56,8 +54,7 @@ const Domaines = () => {
         </div>
       </div>
 
-      {/* Section 2 */}
-      <div id="amenagement-peine" className="domaines-section-reverse">
+      <div id="amenagement-peine" className="domaines-section">
         <div className="domaines-image-container">
           <img src="/assets/aménagement.png" alt="Aménagement de Peine" />
         </div>
@@ -73,7 +70,6 @@ const Domaines = () => {
         </div>
       </div>
 
-      {/* Section 3 */}
       <div id="droit-victimes" className="domaines-section">
         <div className="domaines-image-container">
           <img src="/assets/victimes.png" alt="Droit des Victimes" />
