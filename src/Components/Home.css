@@ -1,8 +1,8 @@
 .home-container {
-    padding-top: 220px;
+    padding-top: 250px;
     min-height: 100vh;
     width: 100%;
-    background-color: #1F2839;
+    background-color: white;
 }
 
 .section {
@@ -29,47 +29,53 @@
 .profile-title {
     width: 100%;
     margin-bottom: 60px;
+    color: black;
 }
 
 .profile-title h1 {
     font-size: 2.5rem;
     margin: 0;
     padding: 0;
-    color: #B69D74;
+    color: black;
 }
 
 .title-underline {
     width: 33%; 
     max-width: 200px;
     height: 2px;
-    background-color: #B69D74;
     margin-top: 20px;
+    background-color: black !important; /* Added !important for specificity */
 }
 
 .profile-content {
     display: flex;
     gap: 40px;
-    align-items: flex-start;
     width: 100%;
+    align-items: stretch;
 }
 
 .profile-content-picture {
     flex-shrink: 0;
     width: 300px; 
+    align-items: center;
 }
 
 .profile-content-picture img {
     width: auto;
-    height: 350px;
+    height: 520px;
 }
 
 .profile-content-description {
-    color: #B69D74;
-    flex: 1;
+    flex: 0 1 70%; /* Reduces width to 70% of container */
     font-size: 1.1rem;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers text */
+    text-align: justify;
+    padding-left: 40px;
 }
 
 .profile-content-description p {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }

@@ -2,20 +2,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100px; 
-    padding: 0; 
-    background-color: #f9f9f9;
-    overflow: hidden;
+    width: 100%;
+    max-height: 100px; /* Existing */
+    margin: 0 auto;
+    box-shadow: 0 -4px 6px -3px rgba(0, 0, 0, 0.1); /* Negative y-offset creates top shadow */
 }
 
 .footer-container img {
-    height: 30px; 
-    width: auto;
-    margin-bottom: 10px;
-}
-
-.footer-container p {
-    font-size: 12px;
+    max-width: 200px;
+    max-height: 80px; /* Reduce image height */
+    object-fit: contain; /* Maintain aspect ratio */
 }

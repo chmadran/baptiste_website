@@ -48,9 +48,6 @@ const Navbar = () => {
         <div className="navbar-logo">
           <img src="/assets/logo.png" alt="logo_grimaud" />
         </div>
-        <div className="navbar-title">
-          <h1>Grimaud Avocat</h1>
-        </div>
         <div className="navbar-button">
           <button>
             <p>06 01 02 03 04</p>
