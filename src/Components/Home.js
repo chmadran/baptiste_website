@@ -19,7 +19,7 @@ const Home = () => {
         </div>
         <div className="profile-content">
           <div className="profile-content-picture">
-            <img src="./assets/pp.png" alt="Baptiste Grimaud" />
+            <img src="./assets/pp.jpg" alt="Baptiste Grimaud" />
           </div>
           <div className="profile-content-description">
           <p>Maître Baptiste Grimaud, avocat au Barreau de Paris, intervient en matière pénale, <strong>dans la défense des prévenus ou des accusés ainsi que dans l'assistance des victimes d'infraction</strong>.</p>

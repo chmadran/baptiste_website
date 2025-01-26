@@ -13,9 +13,9 @@
   }
   
   .hero-image {
-    width: 50%; /* Image occupies half of the screen */
+    width: auto; /* Image occupies half of the screen */
     height: 500px;
-    object-fit: cover; /* Ensures the image is well-fitted */
+    padding-left: 200px;
     object-position: center 10%; /* Adjust this percentage to move image up/down */
 
   }

@@ -5,7 +5,7 @@ const PhaseMisenCause = () => {
     <div className="mis-en-cause-container">
       <div className="mis-en-cause-hero">
         <img
-          src="/assets/honoraires.jpeg"
+          src="/assets/mis-en-cause.jpg"
           alt="Baptiste Grimaud"
           className="hero-image"
         />
