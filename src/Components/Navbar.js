@@ -1,42 +1,25 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';  // Import Link for routing
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
-import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
   const [isDomainesDropdownVisible, setDomainesDropdownVisible] = useState(false);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const handleMouseEnter = () => {
-    console.log('PHASES Dropdown Visible: true');
-    setDropdownVisible(true);
-  };
-  
-  const handleMouseLeave = () => {
-    console.log('PHASES Dropdown Visible: false');
-    setDropdownVisible(false);
-  };
-  
-  const handleDomainesMouseEnter = () => {
-    console.log("DOMAINES Dropdown Visible: true");
-    setDomainesDropdownVisible(true);
-  };
-  
-  const handleDomainesMouseLeave = () => {
-    console.log("DOMAINES Dropdown Visible: false");
-    setDomainesDropdownVisible(false);
-  };  
+  const toggleMobileMenu = () => setMobileMenuOpen(!isMobileMenuOpen);
+  const togglePhasesDropdown = () => setDropdownVisible(!isDropdownVisible);
+  const toggleDomainesDropdown = () => setDomainesDropdownVisible(!isDomainesDropdownVisible);
 
   const location = useLocation();
-  
+
   const handleContactClick = (e) => {
     e.preventDefault();
+    setMobileMenuOpen(false); // close menu on contact click
+
     if (location.pathname === '/') {
-      document.getElementById('contact-section').scrollIntoView({ 
-        behavior: 'smooth' 
-      });
+      document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' });
     } else {
-      // Store that we want to scroll to contact section
       sessionStorage.setItem('scrollToContact', 'true');
       window.location.href = '/#contact-section';
     }
@@ -54,16 +37,19 @@ const Navbar = () => {
             <p>Urgence pénale 7j/7 24h/24</p>
           </button>
         </div>
+        <div className="mobile-menu-toggle" onClick={toggleMobileMenu}>
+          ☰
+        </div>
       </div>
-      <div className="navbar-links">
+
+      <div className={`navbar-links ${isMobileMenuOpen ? 'open' : ''}`}>
         <ul>
           <li><a href="/">LE CABINET</a></li>
-          <li 
-            className="dropdown"
-            onMouseEnter={handleDomainesMouseEnter}
-            onMouseLeave={handleDomainesMouseLeave}
-          >
-            <Link to="/domaines-intervention">DOMAINES D'INTERVENTION</Link>
+
+          <li className="dropdown">
+            <div onClick={toggleDomainesDropdown}>
+              <Link to="/domaines-intervention">DOMAINES D'INTERVENTION</Link>
+            </div>
             <ul className={`dropdown-menu ${isDomainesDropdownVisible ? 'show' : ''}`}>
               <li><Link to="/domaines-intervention#droit-penal-affaires">Droit Pénal général</Link></li>
               <li><Link to="/domaines-intervention#droit-penal-affaires">Droit Pénal des Affaires</Link></li>
@@ -71,27 +57,24 @@ const Navbar = () => {
               <li><Link to="/domaines-intervention#droit-victimes">Droit des Victimes</Link></li>
             </ul>
           </li>
-          <li 
-            className="dropdown"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            <a href="#phases">PHASES D'INTERVENTION</a>
+
+          <li className="dropdown">
+            <div onClick={togglePhasesDropdown}>
+              <a href="#phases">PHASES D'INTERVENTION</a>
+            </div>
             <ul className={`dropdown-menu ${isDropdownVisible ? 'show' : ''}`}>
               <li><Link to="/victime">Je suis victime</Link></li>
               <li><Link to="/mis-en-cause">Je suis mis en cause</Link></li>
             </ul>
           </li>
-          <li><a href="honoraires">HONORAIRES</a></li>
-          <li>
-            <a href="#contact-section" onClick={handleContactClick}>
-              CONTACT
-            </a>
-          </li>
+
+          <li><a href="/honoraires">HONORAIRES</a></li>
+
+          <li><a href="#contact-section" onClick={handleContactClick}>CONTACT</a></li>
         </ul>
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

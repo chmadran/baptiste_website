@@ -3,12 +3,11 @@
     min-height: 100vh;
     width: 100%;
     background-color: #1F2839;
-    align-items: justify;
 }
 
+/* Title Section */
 .honoraires-title-section {
-    top: 220px;
-    margin-left: 100px;;
+    margin-left: 100px;
     padding: 40px;
 }
 
@@ -27,18 +26,17 @@
     margin-top: 10px;
 }
 
+/* Text Section */
 .honoraires-text-section {
     max-width: 1200px;
     margin-left: 100px;
     color: #B69D74;
     padding: 0 40px;
-    text-align: justify; /* Justify text */
-
+    text-align: justify;
 }
 
 .honoraires-text-section p {
     margin-bottom: 20px;
-
 }
 
 .honoraires-text-section p:nth-child(2) {
@@ -51,4 +49,65 @@
     margin: 40px auto;
     max-width: 30%;
     height: auto;
+}
+
+/* ------------------------------- */
+/* 📱 Responsive Styles: Tablets & Phones */
+/* ------------------------------- */
+
+@media only screen and (max-width: 768px) {
+    .honoraires-title-section {
+        margin-left: 40px;
+        padding: 20px;
+    }
+
+    .honoraires-title-section h1 {
+        font-size: 2rem;
+    }
+
+    .honoraires-title-underline {
+        width: 50%;
+        max-width: 150px;
+    }
+
+    .honoraires-text-section {
+        margin-left: 20px;
+        padding: 0 20px;
+        font-size: 0.95rem;
+    }
+
+    .honoraires-text-section p:nth-child(2) {
+        margin-left: 20px;
+    }
+
+    .honoraires-text-section img {
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .honoraires-title-section {
+        margin-left: 20px;
+    }
+
+    .honoraires-title-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .honoraires-title-underline {
+        width: 60%;
+        max-width: 120px;
+    }
+
+    .honoraires-text-section {
+        font-size: 0.9rem;
+    }
+
+    .honoraires-text-section p:nth-child(2) {
+        margin-left: 15px;
+    }
+
+    .honoraires-text-section img {
+        max-width: 80%;
+    }
 }
