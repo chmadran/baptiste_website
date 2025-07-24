@@ -1,10 +1,10 @@
 html {
     scroll-behavior: smooth;
-  }
-  
-  #contact-section {
-    scroll-margin-top: 100px; 
-  }
+}
+
+#contact-section {
+    scroll-margin-top: 100px;
+}
 
 .navbar {
     position: fixed;
@@ -16,17 +16,18 @@ html {
     display: flex;
     flex-direction: column;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-top {
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 1200px; /* Adds max-width */
-    margin: 0 auto; /* Centers the navbar content */
-    padding: 30px 0px; /* Use padding instead of absolute positioning */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0px;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .navbar-button {
@@ -60,7 +61,7 @@ html {
 
 .navbar-logo img {
     width: auto;
-    height: 150px; /* Increased logo size */
+    height: 150px;
     object-fit: contain;
 }
 
@@ -78,22 +79,24 @@ html {
 
 .navbar-links {
     background-color: white;
-    border-top: 2px solid #B69D74; 
-    border-bottom: 2px solid #B69D74; 
-    margin-top: 0; /* Remove top margin */
+    border-top: 2px solid #B69D74;
+    border-bottom: 2px solid #B69D74;
+    margin-top: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 10px 0;
     position: absolute;
-    bottom: 0; /* Position at bottom of navbar */
+    bottom: 0;
 }
+
 .navbar-links ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     gap: 90px;
+    flex-wrap: wrap;
 }
 
 .navbar-links li {
@@ -108,10 +111,11 @@ html {
     font-weight: 300;
 }
 
+/* Dropdown menu */
 .dropdown-menu {
     display: none !important;
     position: absolute;
-    top: 100%; 
+    top: 100%;
     left: 0;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -138,5 +142,79 @@ html {
 }
 
 .dropdown-menu.show {
-    display: block !important; 
+    display: block !important;
+}
+
+/* --------------------- */
+/* 📱 Mobile Media Query */
+/* --------------------- */
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .navbar-top {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar-logo {
+        position: static;
+        transform: none;
+        margin: 10px 0;
+    }
+
+    .navbar-logo img {
+        height: 80px; /* Reduce logo size on small screens */
+    }
+
+    .navbar-button {
+        margin: 10px 0 0 0;
+    }
+
+    .navbar-button button {
+        padding: 12px 20px;
+    }
+
+    .navbar-title h1 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .navbar-links {
+        position: static;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .navbar-links li a {
+        font-size: 18px;
+    }
+
+    #contact-section {
+        scroll-margin-top: 140px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar-title h1 {
+        font-size: 20px;
+    }
+
+    .navbar-button button p {
+        font-size: 14px;
+    }
+
+    .navbar-links li a {
+        font-size: 16px;
+    }
 }
